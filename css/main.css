@@ -14,7 +14,7 @@ body {
 
 #sidebar {
   height: 100%;
-  background: #2c3e50;
+  background: dimgray;
   position: relative;
   top: 0;
   bottom: 0;
@@ -64,13 +64,22 @@ nav a {
 
 #profile {
   padding: 30px;
-  background: #34495e;
+  background: dimgray;
 }
 
 #profile .name,
-#profile .profession {
+#profile .profession,
+#profile .address {
   text-align: center;
-  color: #FFFFFF;
+  color: white;
+}
+
+#profile .profession {
+  font-size: 24px;
+}
+
+#profile .address {
+  font-size: 16px;
 }
 
 #profile .profile-image {
@@ -90,7 +99,7 @@ nav a {
   margin-bottom: 15px;
 }
 
-#main section header h2 {
+#main section header h3 {
   color: #2c3e50;
 }
 
@@ -99,7 +108,7 @@ nav a {
 }
 
 #main .cv-item .meta {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 

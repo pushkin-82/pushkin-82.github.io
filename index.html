@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
 <!--<![endif]-->
 
 <head>
@@ -19,9 +19,6 @@
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
   <div class="container">
     <div id="cv">
       <!-- Example row of columns -->
@@ -32,31 +29,57 @@
 
               <div id="profile">
                <!--  <img src="img/profile.png" class="profile-image img-responsive img-thumbnail img-circle"> -->
-                <h1 class="name">Усачев Владимир</h1>
+                <h1 class="name">Путилин Сергей</h1>
                 <p class="profession">Java Developer</p>
-                <p class="profession">Ukraine, Dnipro</p>
+                <p class="address">Украина, Киев</p>
               </div>
-
-              <nav>
-                <a href="#experience">Опыт</a>
-                <a href="#education">Образование</a>
-                <a href="#skills">Навыки</a>
-              </nav>
 
               <ul id="contact-list" class="list-unstyled">
                 <li>Контакты:</li>
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">usachevvova4@gmail.com</a></li>
-                <li class="phone"><i class="fa fa-phone"></i><a href="tel:+38 (095) 224 3647">+38 (095) 224 3647</a></li>
-                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank"><a href="https://www.linkedin.com/in/владимир-у-1209a6123" target="_blank">аккаунт LinkedIn</a></a></li>
-                <li class="github"><i class="fa fa-github"></i><a href="https://github.com/examplenameaccount/" target="_blank">аккаунт GitHub</a></li>
+                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: s.putilin.82@gmail.com">s.putilin.82@gmail.com</a></li>
+                <li class="phone"><i class="fa fa-phone"></i><a href="tel:+38 (095) 224 3647">+38 (050) 554 8746</a></li>
+                <li class="github"><i class="fa fa-github"></i><a href="https://github.com/pushkin-82/" target="_blank">GitHub account</a></li>
+                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank"><a href="https://www.linkedin.com/in/sergej-putylin-883001190" target="_blank">LinkedIn account</a></a></li>
+                <li class="facebook"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/sputylin" target="_blank">Facebook account</a></li>
               </ul>
             </div>
           </div>
           <div class="col-sm-8 col-md-9 col-height">
             <div id="main">
+
+              <section id="intro">
+                <div class="description">
+                  Добрый день!<br/>
+                  Ищу работу Java-разработчика<br/>
+                  В свободное время занимаюсь самообразованием, изучаю новые технологии в Java и других языках программирования
+                </div>
+              </section>
+              <br>
+
+              <section id="skills">
+                <header>
+                  <h3>Навыки</h3>
+                </header>
+                <div class="description">
+                  <ul>
+                    <li><b>Languages:</b> Java, JavaScript, SQL, C/C++, Python(основы)</li>
+                    <li><b>Frameworks:</b>
+                      <ul>
+                        <li><b><i>Java:</i></b> Java 8 (Time API, Streams), Spring (MVC, Security, Data), JPA (Hibernate), Apache Commons, JUnit</li>
+                        <li><b><i>JavaScript:</i></b> jQuery, Bootstrap.js</li>
+                      </ul>
+                    </li>
+                    <li><b>DB:</b> PostgreSQL, MySQL, SQLite, HSQLDB</li>
+                    <li><b>Технологии:</b> Servlet, JSP/JSTL, REST, JDBC, JPA, AJAX, HTML5</li>
+                    <li><b>Инструменты:</b> IntelliJ IDEA, Maven, Git</li>
+                  </ul>
+                </div>
+              </section>
+              <br>
+
               <section id="experience">
                 <header>
-                  <h2>Опыт</h2>
+                  <h3>Опыт работы</h3>
                 </header>
                 <ul class="list-unstyled">
                   <li class="media cv-item">
@@ -64,148 +87,130 @@
                       <h4 class="media-heading"><a href="https://javaops.ru/view/topjava">Java Enterprise Project</a></h4>
                       <div class="meta">
                         <span class="title"><a href="https://javaops.ru/">JavaOps</a></span><br/>
-                        <span class="dates-employed">Сентябрь 2019 – Декабрь 2019</span><br/>
+                        <span class="dates-employed">09/2019 – 12/2019</span><br/>
                       </div>        
-                      <p class="description">
-                        Создание Java Enterprise проекта с регистрацией/авторизацией и правами доступа на основе ролей. Администратор может создавать/редактировать/удалять пользователей, а пользователи - управлять своим профилем и данными (едой) через UI (по AJAX) и по REST интерфейсу с базовой авторизацией. Возможна фильтрация еды по датам и времени. Цвет записи таблицы еды зависит от того, превышает ли сумма калорий за день норму (редактируемый параметр в профиле пользователя). Весь REST интерфейс покрывается JUnit тестами, используя Spring MVC Test и Spring Security Test. </p>
-                      <p>В проекте используется следующий стек технологий:
-                            Spring Security, Spring MVC, Spring Data JPA, Spring Security Test, Hibernate ORM, Hibernate Validator, SLF4J, Json Jackson, JSP, JSTL, Apache Tomcat, WebJars, DataTables plugin, EHCACHE, PostgreSQL, JUnit, Hamcrest, jQuery, jQuery notification, Bootstrap. </p>
-                        <p>Разработанное в процессе курса <a href="http://topjava-18.herokuapp.com/login">приложение</a>.<p>
+                      <div class="description">
+                        Участие в разработке Spring/JPA Enterprise приложения c авторизацией и правами доступа на основе ролей на стеке Maven/ Spring MVC/ Security/ REST(Jackson)/ Java 8 Stream API:
+                        <ul>
+                          <li>реализация сохранения в базы Postgres и HSQLDB на основе Spring JBDC, JPA(Hibernate) и Spring-Data-JPA</li>
+                          <li>реализация и тестирование REST и AJAX контроллеров</li>
+                          <li>реализация клиента на Bootstrap (css/js), datatables, jQuery + plugins.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="media cv-item">
+                    <div class="media-body">
+                      <h4 class="media-heading">ООО "Виробнича компанія "МТК"</h4>
+                      <div class="meta">
+                        <span class="title">Директор производства</span><br/>
+                        <span class="dates-employed">07/2007 – наст. время</span><br/>
+                      </div>
+                      <div class="description">
+                        Организация производства и монтажа тентовых конструкций.<br/>
+                        Общение с клиентами, согласование техзадания, разработка чертежей изделий,  организация и контроль производства и/или монтажа изделия.<br/>
+                        Работа в различных конструкторских и дизайнерских программах:
+                        <ul>
+                          <li>AutoCAD</li>
+                          <li>Adobe Illustrator</li>
+                          <li>3D Max</li>
+                          <li>Photoshop</li>
+                          <li>CorelDraw</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="media cv-item">
+                    <div class="media-body">
+                      <h4 class="media-heading">ООО "Спарт-Аэро"</h4>
+                      <div class="meta">
+                        <span class="title">Инженер-конструктор</span><br/>
+                        <span class="dates-employed">09/2001 – 02/2007</span><br/>
+                      </div>
+                      <div class="description">
+                        Разработка и организация изготовления рекламных пневмоконструкций.<br/>
+                        Разработка рекламной продукции.
+                      </div>
                     </div>
                   </li>
                 </ul>
               </section>
+              <br>
 
 
               <section id="education">
                 <header>
-                  <h2>Образование</h2>
+                  <h3>Образование</h3>
                 </header>
                 <ul class="list-unstyled">
                   <li class="media cv-item">
                     <div class="media-body">
-                      <h4 class="media-heading">Харьковский национальный университет радиоэлектроники</h4>
                       <div class="meta">
-                        <span class="title">Компьютерные науки
-                      </span><br/>
-                        <span class="location">Харьков, Украина</span><br/>
-                        <span class="dates-employed">Сентябрь 2018 – Август 2021</span>
+                        <span class="title"><a href="https://javarush.ru">JavaRush</a></span><br/>
+                        <span class="dates-employed">02/2019 – наст. время</span><br/>
+                        <span class="description">
+                          Изучение Java: Java Syntax, Java Core, Java Multithreading, Java Collections<br/>
+                        </span>
                       </div>
                     </div>
                   </li>
                   <li class="media cv-item">
                     <div class="media-body">
-                      <h4 class="media-heading">Днепровский национальный университет</h4>
                       <div class="meta">
-                        <span class="title">Компьютерная инженерия</span><br/>
-                        <span class="location">Днепр, Украина</span><br/>
-                        <span class="dates-employed">Сентябрь 2017 – Август 2017</span>
+                        <span class="title"><a href="https://devclub.com">DevClub</a></span><br/>
+                        <span class="dates-employed">09/2017 – 08/2018</span><br/>
+                        <span class="description">
+                          Изучение основ программирования, ООП.<br/>
+                          Основы C/C++, Java, PHP, Python.<br/>
+                          Основы работы с Git.
+                        </span>
                       </div>
                     </div>
                   </li>
                   <li class="media cv-item">
                     <div class="media-body">
-                      <h4 class="media-heading">Java course</h4>
+                      <h4 class="media-heading"><b>Киевский Национальный Университет им. Тараса Шевченко</b></h4>
                       <div class="meta">
-                        <span class="title"><a href="https://javarush.ru/">JavaRush</a></span>
+                        <span class="title"><b>Механико-математический факультет</b></span><br/>
+                        <span class="title">Математик (каф. математического анализа)</span><br/>
+                        <span class="dates-employed">1999 – 2004</span>
                       </div>
-                      <p class="description">
-                        Онлайн-курсы по изучению Java-программирования, в который входит: Java Syntax, Java Core, Java Multithreading, Java Collections.
-                      </p>
+                    </div>
+                  </li>
+                  <li class="media cv-item">
+                    <div class="media-body">
+                      <h4 class="media-heading">Украинский физико-математический лицей</h4>
+                      <div class="meta">
+                        <span class="dates-employed">1997 - 1999</span>
+                      </div>
                     </div>
                   </li>
                 </ul>
               </section>
+              <br>
 
-
-              <section id="skills">
+              <section id="additional-info">
                 <header>
-                  <h2>Навыки</h2>
+                  <h3>Дополнительная информация</h3>
                 </header>
-                <ul class="list-unstyled skills">
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">JEE AS:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Tomcat.
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Languages:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Java, Python, JavaScript, SQL, C/C++.
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Frameworks:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Java: Java 8 (Time API, Streams), Guava, Spring (MVC, Security, Data, Boot), JPA (Hibernate), Apache Commons, JUnit).
-                        JavaScript: jQuery, Bootstrap.js.
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Version control:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Git
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">DB:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        PostgreSQL, MySQL, HSQLDB.
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Инструменты:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Maven, SoapUI, Postman.
-                      </div>
-                    </div>
-                  </li>
-                   <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Технологии:</span>
-                      </div>
-                      <div class="col-sm-8">
-                        Servlet, JSP/JSTL, REST, EJB, RMI, JMS, JavaMail, JAXB, DOM, JDBC, JPA, JNDI, SOAP, AJAX, HTML5.
-                      </div>
-                    </div>
-                  </li>
-                  <li class="skill-item">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <span class="skill-name">Языки:</span>
-                      </div>
-                      <div class="col-sm-9">
-                        Английский(Pre-Intermediate), Украинский, Русский.
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <div class="description">
+                  <ul>
+                    <li>Коммуникабельный, стрессоустойчив</li>
+                    <li>Умение работать как в команде, так и индивидуально</li>
+                    <li>Способность выполнять задания в установленные сроки</li>
+                    <li>Опыт руководства компанией ( > 30 сотрудников)</li>
+                    <li>Имею права категории А, В</li>
+                    <li>В свободное время увлекаюсь спортом (бег, горные лыжи, сноуборд)</li>
+                  </ul>
+                </div>
               </section>
+              <br>
+
+
+
+
+
+
             </div>
           </div>
         </div>
